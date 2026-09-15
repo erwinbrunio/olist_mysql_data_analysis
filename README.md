@@ -49,6 +49,22 @@ The analysis addresses eight critical business questions across revenue growth, 
 ---
 
 ## Files
+
+
+The repository includes 8 relational CSV files from the Brazilian E-Commerce Public Dataset by Olist:
+
+| File Name | Description | Key Identifier |
+| :--- | :--- | :--- |
+| `olist_customers_dataset.csv` | Customer location and unique identifier mappings | `customer_id` |
+| `olist_geolocation_dataset.csv` | Brazilian zip code prefixes with latitude, longitude, city, and state | `geolocation_zip_code_prefix` |
+| `olist_order_items_dataset.csv` | Item details per order, including seller, price, and shipping freight | `order_id`, `order_item_id` |
+| `olist_order_payments_dataset.csv` | Payment methods, installment counts, and transaction values | `order_id` |
+| `olist_order_reviews_dataset.csv` | Customer review scores, comments, and survey timestamps | `review_id`, `order_id` |
+| `olist_orders_dataset.csv` | Core order records, purchase status, and delivery milestones | `order_id` |
+| `olist_products_dataset.csv` | Product categories, dimensions, weights, and photo counts | `product_id` |
+| `olist_sellers_dataset.csv` | Seller locations and unique identifier details | `seller_id` |
+
+The following are the Sql queries to answer the business questions provided above.
 | File Name | Description | Key Focus |
 |---|---|---|
 | `Query1_Top_10_customer_by_spending.sql` | Identifies top 10 spenders by customer order ID. | Customer Value |
